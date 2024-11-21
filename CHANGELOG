@@ -1,3 +1,6 @@
-YYYY-MM--DD
-  - Mijn aanpassing1
-  - Mijn aanpassing2
+2024-11-21
+- self-associatie voor Monster op ignore=true gezet 
+- in Generiek Literal ingevoerd
+- locn:Geometrie ignore true verwijderd.
+- in (Model:Domain Model:OSLO-BodemEnOndergrond:Fractiemetingwaarde:meetwaarde)  tag package verwijderd (verwees naar een niet bestaand package).
+- self-associatie Observatie op ignore=true gezet 
