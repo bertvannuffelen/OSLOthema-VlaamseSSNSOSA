@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "authors": {
+      "@type": "foaf:Person",
+      "@id": "foaf:maker"
+    },
+    "editors": {
+      "@type": "foaf:Person",
+      "@id": "rec:editor"
+    },
+    "contributors": {
+      "@type": "foaf:Person",
+      "@id": "dcterms:contributor"
+    },
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "firstName": {
+      "@id": "foaf:firstName"
+    },
+    "lastName": {
+      "@id": "foaf:lastName"
+    },
+    "affiliationName": {
+      "@id": "foaf:name"
+    },
+    "homepage": {
+      "@id": "foaf:homepage"
+    },
+    "email": {
+      "@id": "foaf:mbox"
+    }
+  },
+  "contributors": [
+    {
+      "@type": "Person",
+      "firstName": "MedewerkerVoornaam",
+      "lastName": "MedewerkerNaam",
+      "affiliation": {
+        "affiliationName": "MedewerkerAffiliatie",
+        "homepage": "https://medewerkerwebsiteurl"
+      },
+      "email": "medewerkervoornaam.medewerkernaam@medewerkerdomein"
+    }
+  ],
+  "authors": [
+    {
+      "@type": "Person",
+      "firstName": "AuteurVoornaam",
+      "lastName": "AuteurNaam",
+      "affiliation": {
+        "affiliationName": "AuteurAffiliatie",
+        "homepage": "https://auteurwebsiteurl"
+      },
+      "email": "auteurvoornaam.auteurnaam@auteurdomein"
+    }
+  ],
+  "editors": [
+    {
+      "@type": "Person",
+      "firstName": "EditorVoornaam",
+      "lastName": "EditorNaam",
+      "affiliation": {
+        "affiliationName": "EditorAffiliatie",
+        "homepage": "https://editorwebsiteurl"
+      },
+      "email": "editorvoornaam.editornaam@editordomein"
+    }
+  ]
+}

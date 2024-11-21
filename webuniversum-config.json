@@ -1,0 +1,537 @@
+{
+  "baseURI": "http://todo.com/",
+  "classes": [
+    {
+      "id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+      "vocabularyLabel": {
+        "nl": "Opdracht"
+      },
+      "applicationProfileLabel": {
+        "nl": "Opdracht"
+      },
+      "vocabularyDefinition": {
+        "nl": "Toegewezen taak."
+      },
+      "applicationProfileDefinition": {
+        "nl": "Toegewezen taak."
+      },
+      "vocabularyUsageNote": {
+        "nl": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
+      },
+      "applicationProfileUsageNote": {
+        "nl": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/InPublicationEnvironment"
+    },
+    {
+      "id": "https://data.vlaanderen.be/ns/generiek#WettelijkKader",
+      "vocabularyLabel": {
+        "nl": "WettelijkKader"
+      },
+      "applicationProfileLabel": {
+        "nl": "WettelijkKader"
+      },
+      "vocabularyDefinition": {
+        "nl": "Het kader dat vastlegt wat behoort tot de wet."
+      },
+      "applicationProfileDefinition": {
+        "nl": "Het kader dat vastlegt wat behoort tot de wet."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/InPublicationEnvironment"
+    }
+  ],
+  "dataTypes": [
+    {
+      "id": "http://fixme.com/",
+      "vocabularyLabel": {
+        "nl": "BenoemdeWaarde"
+      },
+      "applicationProfileLabel": {
+        "nl": "BenoemdeWaarde"
+      },
+      "applicationProfileDefinition": {
+        "nl": "Generieke, zwak getypeerde waarde."
+      },
+      "applicationProfileUsageNote": {
+        "nl": "In essentie een waarde en de naam vh type van de waarde. In deze context gaat het over zaken zoals operator, omgevingstemperatuur etc."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+      "properties": [
+        {
+          "id": "http://fixme.com/",
+          "vocabularyLabel": {
+            "nl": "naam"
+          },
+          "applicationProfileLabel": {
+            "nl": "naam"
+          },
+          "applicationProfileDefinition": {
+            "nl": "Naam vh type van de waarde."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "http://fixme.com/",
+          "range": {
+            "id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Literal"
+            },
+            "applicationProfileLabel": {
+              "nl": "Literal"
+            }
+          },
+          "minCount": "1",
+          "maxCount": "1"
+        },
+        {
+          "id": "http://fixme.com/",
+          "vocabularyLabel": {
+            "nl": "waarde"
+          },
+          "applicationProfileLabel": {
+            "nl": "waarde"
+          },
+          "applicationProfileDefinition": {
+            "nl": "Kwalitatieve of kwantitatieve invulling van de waarde."
+          },
+          "applicationProfileUsageNote": {
+            "nl": "Het datatype Any moet gesubstitueerd worden door iets concreter zoals Agent of <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/#Maat\">Maat</a>."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "http://fixme.com/",
+          "range": {
+            "id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Any"
+            },
+            "applicationProfileLabel": {
+              "nl": "Any"
+            }
+          },
+          "minCount": "1",
+          "maxCount": "1"
+        }
+      ]
+    },
+    {
+      "id": "http://www.w3.org/ns/locn#Geometry",
+      "vocabularyLabel": {
+        "nl": "Geometrie"
+      },
+      "applicationProfileLabel": {
+        "nl": "Geometrie"
+      },
+      "applicationProfileDefinition": {
+        "nl": "Vorm- en positiekenmerken van een object."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+      "properties": [
+        {
+          "id": "http://www.opengis.net/ont/geosparql#asGML",
+          "vocabularyLabel": {
+            "nl": "gml"
+          },
+          "applicationProfileLabel": {
+            "nl": "gml"
+          },
+          "applicationProfileDefinition": {
+            "nl": "Geometrie uitgedrukt in gml-formaat."
+          },
+          "applicationProfileUsageNote": {
+            "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "http://www.w3.org/ns/locn#Geometry",
+          "range": {
+            "id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Literal"
+            },
+            "applicationProfileLabel": {
+              "nl": "Literal"
+            }
+          },
+          "minCount": "0",
+          "maxCount": "1"
+        },
+        {
+          "id": "http://todo.com/Geometrie.opmeting",
+          "vocabularyLabel": {
+            "nl": "opmeting"
+          },
+          "applicationProfileLabel": {
+            "nl": "opmeting"
+          },
+          "vocabularyDefinition": {
+            "nl": "De manier waarop de geometrie werd bepaald."
+          },
+          "applicationProfileDefinition": {
+            "nl": "De manier waarop de geometrie werd bepaald."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/InPackage",
+          "domain": "http://www.w3.org/ns/locn#Geometry",
+          "range": {
+            "id": "https://data.vlaanderen.be/ns/generiek#Opmeting",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Opmeting"
+            },
+            "applicationProfileLabel": {
+              "nl": "Opmeting"
+            }
+          },
+          "minCount": "0",
+          "maxCount": "1"
+        },
+        {
+          "id": "http://www.opengis.net/ont/geosparql#asWKT",
+          "vocabularyLabel": {
+            "nl": "wkt"
+          },
+          "applicationProfileLabel": {
+            "nl": "wkt"
+          },
+          "applicationProfileDefinition": {
+            "nl": "Geometrie uitgedrukt in wkt-formaat."
+          },
+          "applicationProfileUsageNote": {
+            "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "http://www.w3.org/ns/locn#Geometry",
+          "range": {
+            "id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Literal"
+            },
+            "applicationProfileLabel": {
+              "nl": "Literal"
+            }
+          },
+          "minCount": "0",
+          "maxCount": "1"
+        }
+      ]
+    },
+    {
+      "id": "http://fixme.com/",
+      "vocabularyLabel": {
+        "nl": "Herkomst"
+      },
+      "applicationProfileLabel": {
+        "nl": "Herkomst"
+      },
+      "applicationProfileDefinition": {
+        "nl": "Informatie over de bewerkingen die op de data plaatsvonden of de brondata die werd gebruikt bij het produceren van de data."
+      },
+      "applicationProfileUsageNote": {
+        "nl": "OPMERKING: Meer info over dit datatype in <a href=\"https://iso.org/standard/26013.html\">ISO 19115 Geographic Information - Metadata</a>."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "id": "http://www.w3.org/ns/adms#Identifier",
+      "vocabularyLabel": {
+        "nl": "Identificator"
+      },
+      "applicationProfileLabel": {
+        "nl": "Identificator"
+      },
+      "applicationProfileDefinition": {
+        "nl": "Informatie gebruikt om een object uniek te identificeren."
+      },
+      "applicationProfileUsageNote": {
+        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+      "properties": [
+        {
+          "id": "http://www.w3.org/2004/02/skos/core#notation",
+          "vocabularyLabel": {
+            "nl": "identificator"
+          },
+          "applicationProfileLabel": {
+            "nl": "identificator"
+          },
+          "applicationProfileDefinition": {
+            "nl": "String gebruikt om het object uniek te identificeren."
+          },
+          "applicationProfileUsageNote": {
+            "nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "http://www.w3.org/ns/adms#Identifier",
+          "range": {
+            "id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Literal"
+            },
+            "applicationProfileLabel": {
+              "nl": "Literal"
+            }
+          },
+          "minCount": "0",
+          "maxCount": "1"
+        },
+        {
+          "id": "http://purl.org/dc/terms/creator",
+          "vocabularyLabel": {
+            "nl": "toegekendDoor"
+          },
+          "applicationProfileLabel": {
+            "nl": "toegekend door"
+          },
+          "applicationProfileDefinition": {
+            "nl": "Link naar de agent die de identificator heeft uitgegeven."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "http://www.w3.org/ns/adms#Identifier",
+          "range": {
+            "id": "http://purl.org/dc/terms/Agent",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Agent"
+            },
+            "applicationProfileLabel": {
+              "nl": "Agent"
+            }
+          },
+          "minCount": "0",
+          "maxCount": "1"
+        },
+        {
+          "id": "http://purl.org/dc/terms/issued",
+          "vocabularyLabel": {
+            "nl": "toegekendOp"
+          },
+          "applicationProfileLabel": {
+            "nl": "toegekend op"
+          },
+          "applicationProfileDefinition": {
+            "nl": "Tijdstip waarop de identificator werd uitgegeven."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "http://www.w3.org/ns/adms#Identifier",
+          "range": {
+            "id": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "DateTime"
+            },
+            "applicationProfileLabel": {
+              "nl": "DateTime"
+            }
+          },
+          "minCount": "0",
+          "maxCount": "1"
+        }
+      ]
+    },
+    {
+      "id": "https://qudt.org/schema/qudt/QuantityValue",
+      "vocabularyLabel": {
+        "nl": "KwantitatieveWaarde"
+      },
+      "applicationProfileLabel": {
+        "nl": "KwantitatieveWaarde"
+      },
+      "applicationProfileDefinition": {
+        "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+      },
+      "applicationProfileUsageNote": {
+        "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+      "properties": [
+        {
+          "id": "https://qudt.org/schema/qudt/hasUnit",
+          "vocabularyLabel": {
+            "nl": "eenheid"
+          },
+          "applicationProfileLabel": {
+            "nl": "eenheid"
+          },
+          "applicationProfileDefinition": {
+            "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "https://qudt.org/schema/qudt/QuantityValue",
+          "range": {
+            "id": "http://www.w3.org/2004/02/skos/core#Concept",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Concept"
+            },
+            "applicationProfileLabel": {
+              "nl": "Concept"
+            }
+          },
+          "minCount": "0",
+          "maxCount": "1"
+        },
+        {
+          "id": "https://qudt.org/schema/qudt/value",
+          "vocabularyLabel": {
+            "nl": "waarde"
+          },
+          "applicationProfileLabel": {
+            "nl": "waarde"
+          },
+          "applicationProfileDefinition": {
+            "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+          },
+          "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+          "domain": "https://qudt.org/schema/qudt/QuantityValue",
+          "range": {
+            "id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "listedInDocument": false,
+            "vocabularyLabel": {
+              "nl": "Literal"
+            },
+            "applicationProfileLabel": {
+              "nl": "Literal"
+            }
+          },
+          "minCount": "1",
+          "maxCount": "1"
+        }
+      ]
+    },
+    {
+      "id": "http://www.w3.org/ns/prov#Location",
+      "vocabularyLabel": {
+        "nl": "Locatie"
+      },
+      "applicationProfileLabel": {
+        "nl": "Locatie"
+      },
+      "applicationProfileDefinition": {
+        "nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres."
+      },
+      "applicationProfileUsageNote": {
+        "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. OPMERKING: Meer info over deze klassen/datatypes in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "id": "http://www.w3.org/2006/time#TemporalEntity",
+      "vocabularyLabel": {
+        "nl": "TemporeleEntiteit"
+      },
+      "applicationProfileLabel": {
+        "nl": "TemporeleEntiteit"
+      },
+      "applicationProfileDefinition": {
+        "nl": "Abstracte klasse voor temporele objecten."
+      },
+      "applicationProfileUsageNote": {
+        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    }
+  ],
+  "properties": [
+    {
+      "id": "http://todo.com/geassocieerdeObservatie",
+      "vocabularyLabel": {
+        "nl": "geassocieerdeObservatie"
+      },
+      "applicationProfileLabel": {
+        "nl": "geassocieerdeObservatie"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/InPackage",
+      "domain": "http://www.w3.org/ns/sosa/Deployment",
+      "range": {
+        "id": "http://www.w3.org/ns/sosa/Observation",
+        "listedInDocument": false,
+        "vocabularyLabel": {
+          "nl": "Observatie"
+        },
+        "applicationProfileLabel": {
+          "nl": "Observatie"
+        }
+      },
+      "minCount": "0",
+      "maxCount": "*"
+    },
+    {
+      "id": "http://todo.com/gebruiktVoorHetBemonsterenVan",
+      "vocabularyLabel": {
+        "nl": "gebruiktVoorHetBemonsterenVan"
+      },
+      "applicationProfileLabel": {
+        "nl": "gebruiktVoorHetBemonsterenVan"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/InPackage",
+      "domain": "http://www.w3.org/ns/sosa/oms/SamplingProcedure",
+      "range": {
+        "id": "http://www.w3.org/ns/sosa/Sampling",
+        "listedInDocument": false,
+        "vocabularyLabel": {
+          "nl": "Bemonstering"
+        },
+        "applicationProfileLabel": {
+          "nl": "Bemonstering"
+        }
+      },
+      "minCount": "0",
+      "maxCount": "*"
+    },
+    {
+      "id": "http://todo.com/host",
+      "vocabularyLabel": {
+        "nl": "host"
+      },
+      "applicationProfileLabel": {
+        "nl": "host"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/InPackage",
+      "domain": "http://www.w3.org/ns/sosa/Observation",
+      "range": {
+        "id": "https://www.w3.org/ns/sosa/Platform",
+        "listedInDocument": false,
+        "vocabularyLabel": {
+          "nl": "Platform"
+        },
+        "applicationProfileLabel": {
+          "nl": "Platform"
+        }
+      },
+      "minCount": "0",
+      "maxCount": "*"
+    },
+    {
+      "id": "http://todo.com/Geometrie.opmeting",
+      "vocabularyLabel": {
+        "nl": "opmeting"
+      },
+      "applicationProfileLabel": {
+        "nl": "opmeting"
+      },
+      "vocabularyDefinition": {
+        "nl": "De manier waarop de geometrie werd bepaald."
+      },
+      "applicationProfileDefinition": {
+        "nl": "De manier waarop de geometrie werd bepaald."
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/InPackage",
+      "domain": "http://www.w3.org/ns/locn#Geometry",
+      "range": {
+        "id": "https://data.vlaanderen.be/ns/generiek#Opmeting",
+        "listedInDocument": false,
+        "vocabularyLabel": {
+          "nl": "Opmeting"
+        },
+        "applicationProfileLabel": {
+          "nl": "Opmeting"
+        }
+      },
+      "minCount": "0",
+      "maxCount": "1"
+    }
+  ]
+}
